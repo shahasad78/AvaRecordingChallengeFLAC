@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CB4A08DAA30B5447C5F657B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4AD899C9A906ECF18B9FC /* Assets.xcassets */; };
+		3CB4A5B5D96A5A13F25B1796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4A692DABDB9977470026B /* Main.storyboard */; };
+		3CB4A8D46C0BD3DF3C6DF556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4AD15327FD7BB189B34DE /* LaunchScreen.storyboard */; };
+		3CB4A983B428A05EE4B3A150 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */; };
+		3CB4A9D869B8DA5D8D8CC33B /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A34042C8B40950C36A64 /* AudioUtils.swift */; };
+		3CB4AC9B25B171707ED5F5E8 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A200A99BA33BBE7F15E8 /* RecorderViewController.swift */; };
+		3CB4ADA80020C29A85024FB0 /* AudioDelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */; };
 		CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */; };
-		CB60DAE81D5BAC4C00CF6E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DAE71D5BAC4C00CF6E28 /* ViewController.swift */; };
-		CB60DAEB1D5BAC4C00CF6E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DAE91D5BAC4C00CF6E28 /* Main.storyboard */; };
-		CB60DAED1D5BAC4C00CF6E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB60DAEC1D5BAC4C00CF6E28 /* Assets.xcassets */; };
-		CB60DAF01D5BAC4C00CF6E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DAEE1D5BAC4C00CF6E28 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CB4A16C5B79D3CCE0AB8D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CB4A200A99BA33BBE7F15E8 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		3CB4A34042C8B40950C36A64 /* AudioUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
+		3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3CB4ACACED2CD410E5F9F723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CB4AD899C9A906ECF18B9FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegateType.swift; sourceTree = "<group>"; };
 		CB60DAE21D5BAC4C00CF6E28 /* AvaChallengeRecordingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvaChallengeRecordingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB60DAE71D5BAC4C00CF6E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB60DAEA1D5BAC4C00CF6E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB60DAEC1D5BAC4C00CF6E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB60DAEF1D5BAC4C00CF6E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB60DAF11D5BAC4C00CF6E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB4AF8167F9208C8BFEEDC0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB4A200A99BA33BBE7F15E8 /* RecorderViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3CB4AFD0D5D42E471E520BA6 /* Graphics+Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3CB4AD15327FD7BB189B34DE /* LaunchScreen.storyboard */,
+				3CB4A692DABDB9977470026B /* Main.storyboard */,
+				3CB4AD899C9A906ECF18B9FC /* Assets.xcassets */,
+			);
+			name = "Graphics+Layout";
+			sourceTree = "<group>";
+		};
 		CB60DAD91D5BAC4C00CF6E28 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */,
-				CB60DAE71D5BAC4C00CF6E28 /* ViewController.swift */,
-				CB60DAE91D5BAC4C00CF6E28 /* Main.storyboard */,
-				CB60DAEC1D5BAC4C00CF6E28 /* Assets.xcassets */,
-				CB60DAEE1D5BAC4C00CF6E28 /* LaunchScreen.storyboard */,
 				CB60DAF11D5BAC4C00CF6E28 /* Info.plist */,
+				3CB4AF8167F9208C8BFEEDC0 /* View Controllers */,
+				3CB4AFD0D5D42E471E520BA6 /* Graphics+Layout */,
+				3CB4A34042C8B40950C36A64 /* AudioUtils.swift */,
+				3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */,
+				3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */,
 			);
 			path = AvaChallengeRecordingApp;
 			sourceTree = "<group>";
@@ -96,6 +121,7 @@
 				TargetAttributes = {
 					CB60DAE11D5BAC4C00CF6E28 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZZ32G7S6G8;
 					};
 				};
 			};
@@ -122,9 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60DAF01D5BAC4C00CF6E28 /* LaunchScreen.storyboard in Resources */,
-				CB60DAED1D5BAC4C00CF6E28 /* Assets.xcassets in Resources */,
-				CB60DAEB1D5BAC4C00CF6E28 /* Main.storyboard in Resources */,
+				3CB4A8D46C0BD3DF3C6DF556 /* LaunchScreen.storyboard in Resources */,
+				3CB4A5B5D96A5A13F25B1796 /* Main.storyboard in Resources */,
+				3CB4A08DAA30B5447C5F657B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,26 +161,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60DAE81D5BAC4C00CF6E28 /* ViewController.swift in Sources */,
 				CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */,
+				3CB4AC9B25B171707ED5F5E8 /* RecorderViewController.swift in Sources */,
+				3CB4A9D869B8DA5D8D8CC33B /* AudioUtils.swift in Sources */,
+				3CB4A983B428A05EE4B3A150 /* AudioManager.swift in Sources */,
+				3CB4ADA80020C29A85024FB0 /* AudioDelegateType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB60DAE91D5BAC4C00CF6E28 /* Main.storyboard */ = {
+		3CB4A692DABDB9977470026B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB60DAEA1D5BAC4C00CF6E28 /* Base */,
+				3CB4ACACED2CD410E5F9F723 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CB60DAEE1D5BAC4C00CF6E28 /* LaunchScreen.storyboard */ = {
+		3CB4AD15327FD7BB189B34DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB60DAEF1D5BAC4C00CF6E28 /* Base */,
+				3CB4A16C5B79D3CCE0AB8D11 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -249,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AvaChallengeRecordingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phantomuniversal.AvaChallengeRecordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AvaChallengeRecordingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phantomuniversal.AvaChallengeRecordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +321,7 @@
 				CB60DAF61D5BAC4C00CF6E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
