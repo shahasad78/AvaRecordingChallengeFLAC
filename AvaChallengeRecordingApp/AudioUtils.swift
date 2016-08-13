@@ -34,7 +34,8 @@ typealias URLGenerator = () -> NSURL
 /// - Returns: a `URLGenerator` function object that returns a continuously incrementing fileName
 func getFileURL(withExtension fileExtension: String) -> URLGenerator {
     var number = 0
-    let tempDir = NSTemporaryDirectory()
+    let searchPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+    let tempDir = searchPath[0] + "/tmp"
     return { () in
         let url = NSURL(fileURLWithPath: tempDir + "\(number)" + ".\(fileExtension)")
         number += 1

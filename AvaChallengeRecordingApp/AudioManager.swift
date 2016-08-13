@@ -55,7 +55,7 @@ class AudioManager: NSObject {
     // -------------------------------
     private var textQueue = [String]()  // Stores a queue of text for the speech recognizer
     var updateTimer: CADisplayLink!     // Used to run updates every cycle
-    let urlGen = getFileURL(withExtension: "caf")   // a URLGenerator function that generates a unique filePath
+    let urlGen = getFileURL(withExtension: "wav")   // a URLGenerator function that generates a unique filePath
     var tempFiles = [NSURL]()   // Stores URLS for recorded files
     var recordFileURL: NSURL
     // ===============================
@@ -105,8 +105,13 @@ class AudioManager: NSObject {
     private func setupRecorder()  {
         let recordSettings: [String: AnyObject] = [
             AVFormatIDKey: Int(kAudioFormatLinearPCM),
-                AVSampleRateKey: 44100.0,
+                AVSampleRateKey: 16000.0,
                 AVNumberOfChannelsKey: 1,
+                AVLinearPCMIsBigEndianKey: false,
+                AVLinearPCMIsFloatKey: false,
+                AVEncoderBitRateKey: 16,
+                AVLinearPCMIsNonInterleaved: false,
+                AVLinearPCMBitDepthKey: 16,
                 AVEncoderAudioQualityKey: AVAudioQuality.High.rawValue
         ]
 
@@ -250,6 +255,19 @@ extension  AudioManager: AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         audioRecorderDelegate?.didFinishRecording(recorder.url)
         tempFiles.append(recorder.url)
+
+        // Set up files for flac conversion
+        let flacOutFile = (recorder.url.URLByDeletingPathExtension!.absoluteString as NSString).UTF8String
+        let flacInFile = (recorder.url.absoluteString as NSString).UTF8String
+        let outFiles = flac_file_array()
+
+        // Internal housekeeping for memory freeing later
+//        outputFileBuffers.append((count: 1024, buffer: outFiles))
+
+        let status = convertWavToFlac(flacInFile, flacOutFile, 0, outFiles)
+        print("Convert status finished with code: \(status)")
+        
+        recordFileURL = urlGen()
         
     }
 
