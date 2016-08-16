@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CB4A08DAA30B5447C5F657B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4AD899C9A906ECF18B9FC /* Assets.xcassets */; };
+		3CB4A59AF25E95665CD73184 /* wav_to_flac.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A9D76BB2EDDF6124D2F8 /* wav_to_flac.c */; };
 		3CB4A5B5D96A5A13F25B1796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4A692DABDB9977470026B /* Main.storyboard */; };
 		3CB4A8D46C0BD3DF3C6DF556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB4AD15327FD7BB189B34DE /* LaunchScreen.storyboard */; };
 		3CB4A983B428A05EE4B3A150 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */; };
@@ -17,9 +18,6 @@
 		CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */; };
 		CBCB0D0B1D5EC29600E30D93 /* FLACiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCB0CFF1D5EC29600E30D93 /* FLACiOS.framework */; };
 		CBCB0D0C1D5EC29600E30D93 /* libFLACiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCB0D0A1D5EC29600E30D93 /* libFLACiOS.a */; };
-		CBCB0D121D5EC30700E30D93 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */; };
-		CBCB0D131D5EC30700E30D93 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CBCB0D0F1D5EC30700E30D93 /* README */; };
-		CBCB0D141D5EC30700E30D93 /* wav_to_flac.c in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */; };
 		CBCB0D181D5EC57700E30D93 /* FlacUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0D161D5EC57700E30D93 /* FlacUtils.c */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +26,8 @@
 		3CB4A200A99BA33BBE7F15E8 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		3CB4A34042C8B40950C36A64 /* AudioUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
 		3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3CB4A634EAD9DECD7607F012 /* wav_to_flac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav_to_flac.h; sourceTree = "<group>"; };
+		3CB4A9D76BB2EDDF6124D2F8 /* wav_to_flac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav_to_flac.c; sourceTree = "<group>"; };
 		3CB4ACACED2CD410E5F9F723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CB4AD899C9A906ECF18B9FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegateType.swift; sourceTree = "<group>"; };
@@ -45,10 +45,6 @@
 		CBCB0D081D5EC29600E30D93 /* stream_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_decoder.h; sourceTree = "<group>"; };
 		CBCB0D091D5EC29600E30D93 /* stream_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_encoder.h; sourceTree = "<group>"; };
 		CBCB0D0A1D5EC29600E30D93 /* libFLACiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFLACiOS.a; sourceTree = "<group>"; };
-		CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		CBCB0D0F1D5EC30700E30D93 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav_to_flac.c; sourceTree = "<group>"; };
-		CBCB0D111D5EC30700E30D93 /* wav_to_flac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav_to_flac.h; sourceTree = "<group>"; };
 		CBCB0D151D5EC34300E30D93 /* AvaChallengeRecordingApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AvaChallengeRecordingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		CBCB0D161D5EC57700E30D93 /* FlacUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FlacUtils.c; sourceTree = "<group>"; };
 		CBCB0D171D5EC57700E30D93 /* FlacUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlacUtils.h; sourceTree = "<group>"; };
@@ -67,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB4A31B0A1FF087931A10B4 /* wav_to_flac */ = {
+			isa = PBXGroup;
+			children = (
+				3CB4A9D76BB2EDDF6124D2F8 /* wav_to_flac.c */,
+				3CB4A634EAD9DECD7607F012 /* wav_to_flac.h */,
+			);
+			path = wav_to_flac;
+			sourceTree = "<group>";
+		};
 		3CB4AF8167F9208C8BFEEDC0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +118,9 @@
 				CBCB0D161D5EC57700E30D93 /* FlacUtils.c */,
 				CBCB0D171D5EC57700E30D93 /* FlacUtils.h */,
 				CBCB0D151D5EC34300E30D93 /* AvaChallengeRecordingApp-Bridging-Header.h */,
-				CBCB0D0D1D5EC30700E30D93 /* wav_to_flac */,
 				3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */,
 				CBB892441D5EBD2D007CCB25 /* Frameworks */,
+				3CB4A31B0A1FF087931A10B4 /* wav_to_flac */,
 			);
 			path = AvaChallengeRecordingApp;
 			sourceTree = "<group>";
@@ -144,17 +149,6 @@
 				CBCB0D091D5EC29600E30D93 /* stream_encoder.h */,
 			);
 			path = "\"FLACiOSHeaders\" ";
-			sourceTree = "<group>";
-		};
-		CBCB0D0D1D5EC30700E30D93 /* wav_to_flac */ = {
-			isa = PBXGroup;
-			children = (
-				CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */,
-				CBCB0D0F1D5EC30700E30D93 /* README */,
-				CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */,
-				CBCB0D111D5EC30700E30D93 /* wav_to_flac.h */,
-			);
-			path = wav_to_flac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCB0D131D5EC30700E30D93 /* README in Resources */,
-				CBCB0D121D5EC30700E30D93 /* LICENSE.txt in Resources */,
 				3CB4A8D46C0BD3DF3C6DF556 /* LaunchScreen.storyboard in Resources */,
 				3CB4A5B5D96A5A13F25B1796 /* Main.storyboard in Resources */,
 				3CB4A08DAA30B5447C5F657B /* Assets.xcassets in Resources */,
@@ -233,11 +225,11 @@
 			files = (
 				CBCB0D181D5EC57700E30D93 /* FlacUtils.c in Sources */,
 				CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */,
-				CBCB0D141D5EC30700E30D93 /* wav_to_flac.c in Sources */,
 				3CB4AC9B25B171707ED5F5E8 /* RecorderViewController.swift in Sources */,
 				3CB4A9D869B8DA5D8D8CC33B /* AudioUtils.swift in Sources */,
 				3CB4A983B428A05EE4B3A150 /* AudioManager.swift in Sources */,
 				3CB4ADA80020C29A85024FB0 /* AudioDelegateType.swift in Sources */,
+				3CB4A59AF25E95665CD73184 /* wav_to_flac.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
