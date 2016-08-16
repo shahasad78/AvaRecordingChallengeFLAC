@@ -257,8 +257,10 @@ extension  AudioManager: AVAudioRecorderDelegate {
         tempFiles.append(recorder.url)
 
         // Set up files for flac conversion
-        let flacOutFile = (recorder.url.URLByDeletingPathExtension!.absoluteString as NSString).UTF8String
-        let flacInFile = (recorder.url.absoluteString as NSString).UTF8String
+        let flacOut = (recorder.url.URLByDeletingPathExtension!.absoluteString as NSString)
+        let flacOutFile = flacOut.substringFromIndex(8).cStringUsingEncoding(NSUTF8StringEncoding)!
+        let flacIn = recorder.url.absoluteString as NSString
+        let flacInFile = flacIn.substringFromIndex(8).cStringUsingEncoding(NSUTF8StringEncoding)!
         let outFiles = flac_file_array()
 
         // Internal housekeeping for memory freeing later

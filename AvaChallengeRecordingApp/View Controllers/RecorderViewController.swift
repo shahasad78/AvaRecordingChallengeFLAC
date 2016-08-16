@@ -18,9 +18,6 @@ class RecorderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.recordButton.enabled = appHasMicAccess
-
         audioManager.audioRecorderDelegate = self
         audioManager.audioPlayerDelegate = self
 //        audioManager.audioSpeechSynthesizerDelegate = self

@@ -15,6 +15,12 @@
 		3CB4AC9B25B171707ED5F5E8 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4A200A99BA33BBE7F15E8 /* RecorderViewController.swift */; };
 		3CB4ADA80020C29A85024FB0 /* AudioDelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */; };
 		CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */; };
+		CBCB0D0B1D5EC29600E30D93 /* FLACiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCB0CFF1D5EC29600E30D93 /* FLACiOS.framework */; };
+		CBCB0D0C1D5EC29600E30D93 /* libFLACiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCB0D0A1D5EC29600E30D93 /* libFLACiOS.a */; };
+		CBCB0D121D5EC30700E30D93 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */; };
+		CBCB0D131D5EC30700E30D93 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CBCB0D0F1D5EC30700E30D93 /* README */; };
+		CBCB0D141D5EC30700E30D93 /* wav_to_flac.c in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */; };
+		CBCB0D181D5EC57700E30D93 /* FlacUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0D161D5EC57700E30D93 /* FlacUtils.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,24 @@
 		CB60DAE21D5BAC4C00CF6E28 /* AvaChallengeRecordingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvaChallengeRecordingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DAE51D5BAC4C00CF6E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB60DAF11D5BAC4C00CF6E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCB0CFF1D5EC29600E30D93 /* FLACiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLACiOS.framework; sourceTree = "<group>"; };
+		CBCB0D011D5EC29600E30D93 /* all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
+		CBCB0D021D5EC29600E30D93 /* assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assert.h; sourceTree = "<group>"; };
+		CBCB0D031D5EC29600E30D93 /* callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
+		CBCB0D041D5EC29600E30D93 /* export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		CBCB0D051D5EC29600E30D93 /* format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format.h; sourceTree = "<group>"; };
+		CBCB0D061D5EC29600E30D93 /* metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metadata.h; sourceTree = "<group>"; };
+		CBCB0D071D5EC29600E30D93 /* ordinals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ordinals.h; sourceTree = "<group>"; };
+		CBCB0D081D5EC29600E30D93 /* stream_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_decoder.h; sourceTree = "<group>"; };
+		CBCB0D091D5EC29600E30D93 /* stream_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_encoder.h; sourceTree = "<group>"; };
+		CBCB0D0A1D5EC29600E30D93 /* libFLACiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFLACiOS.a; sourceTree = "<group>"; };
+		CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CBCB0D0F1D5EC30700E30D93 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav_to_flac.c; sourceTree = "<group>"; };
+		CBCB0D111D5EC30700E30D93 /* wav_to_flac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav_to_flac.h; sourceTree = "<group>"; };
+		CBCB0D151D5EC34300E30D93 /* AvaChallengeRecordingApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AvaChallengeRecordingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		CBCB0D161D5EC57700E30D93 /* FlacUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FlacUtils.c; sourceTree = "<group>"; };
+		CBCB0D171D5EC57700E30D93 /* FlacUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlacUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCB0D0B1D5EC29600E30D93 /* FLACiOS.framework in Frameworks */,
+				CBCB0D0C1D5EC29600E30D93 /* libFLACiOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +110,51 @@
 				3CB4AFD0D5D42E471E520BA6 /* Graphics+Layout */,
 				3CB4A34042C8B40950C36A64 /* AudioUtils.swift */,
 				3CB4A3BDB22C3AB92310C866 /* AudioManager.swift */,
+				CBCB0D161D5EC57700E30D93 /* FlacUtils.c */,
+				CBCB0D171D5EC57700E30D93 /* FlacUtils.h */,
+				CBCB0D151D5EC34300E30D93 /* AvaChallengeRecordingApp-Bridging-Header.h */,
+				CBCB0D0D1D5EC30700E30D93 /* wav_to_flac */,
 				3CB4ADE80AB48BF86EEE667E /* AudioDelegateType.swift */,
+				CBB892441D5EBD2D007CCB25 /* Frameworks */,
 			);
 			path = AvaChallengeRecordingApp;
+			sourceTree = "<group>";
+		};
+		CBB892441D5EBD2D007CCB25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB0CFF1D5EC29600E30D93 /* FLACiOS.framework */,
+				CBCB0D001D5EC29600E30D93 /* "FLACiOSHeaders"  */,
+				CBCB0D0A1D5EC29600E30D93 /* libFLACiOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBCB0D001D5EC29600E30D93 /* "FLACiOSHeaders"  */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB0D011D5EC29600E30D93 /* all.h */,
+				CBCB0D021D5EC29600E30D93 /* assert.h */,
+				CBCB0D031D5EC29600E30D93 /* callback.h */,
+				CBCB0D041D5EC29600E30D93 /* export.h */,
+				CBCB0D051D5EC29600E30D93 /* format.h */,
+				CBCB0D061D5EC29600E30D93 /* metadata.h */,
+				CBCB0D071D5EC29600E30D93 /* ordinals.h */,
+				CBCB0D081D5EC29600E30D93 /* stream_decoder.h */,
+				CBCB0D091D5EC29600E30D93 /* stream_encoder.h */,
+			);
+			path = "\"FLACiOSHeaders\" ";
+			sourceTree = "<group>";
+		};
+		CBCB0D0D1D5EC30700E30D93 /* wav_to_flac */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB0D0E1D5EC30700E30D93 /* LICENSE.txt */,
+				CBCB0D0F1D5EC30700E30D93 /* README */,
+				CBCB0D101D5EC30700E30D93 /* wav_to_flac.c */,
+				CBCB0D111D5EC30700E30D93 /* wav_to_flac.h */,
+			);
+			path = wav_to_flac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +189,7 @@
 				TargetAttributes = {
 					CB60DAE11D5BAC4C00CF6E28 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ZZ32G7S6G8;
+						DevelopmentTeam = 8NT726EKLP;
 					};
 				};
 			};
@@ -148,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCB0D131D5EC30700E30D93 /* README in Resources */,
+				CBCB0D121D5EC30700E30D93 /* LICENSE.txt in Resources */,
 				3CB4A8D46C0BD3DF3C6DF556 /* LaunchScreen.storyboard in Resources */,
 				3CB4A5B5D96A5A13F25B1796 /* Main.storyboard in Resources */,
 				3CB4A08DAA30B5447C5F657B /* Assets.xcassets in Resources */,
@@ -161,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCB0D181D5EC57700E30D93 /* FlacUtils.c in Sources */,
 				CB60DAE61D5BAC4C00CF6E28 /* AppDelegate.swift in Sources */,
+				CBCB0D141D5EC30700E30D93 /* wav_to_flac.c in Sources */,
 				3CB4AC9B25B171707ED5F5E8 /* RecorderViewController.swift in Sources */,
 				3CB4A9D869B8DA5D8D8CC33B /* AudioUtils.swift in Sources */,
 				3CB4A983B428A05EE4B3A150 /* AudioManager.swift in Sources */,
@@ -280,11 +352,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AvaChallengeRecordingApp",
+				);
 				INFOPLIST_FILE = AvaChallengeRecordingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AvaChallengeRecordingApp",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phantomuniversal.AvaChallengeRecordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AvaChallengeRecordingApp/AvaChallengeRecordingApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -294,11 +376,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AvaChallengeRecordingApp",
+				);
 				INFOPLIST_FILE = AvaChallengeRecordingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AvaChallengeRecordingApp",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phantomuniversal.AvaChallengeRecordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AvaChallengeRecordingApp/AvaChallengeRecordingApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
